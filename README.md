@@ -6,5 +6,7 @@
 
 Different kubectl versions available, see the specific branches.
 
-## kubectl versions
-* v1.8
+Kubectl installed by [Google Cloud Platform SDK](https://cloud.google.com/sdk/)
+
+## kubectl tags and versions
+* v1.8 -> 1.8.6
