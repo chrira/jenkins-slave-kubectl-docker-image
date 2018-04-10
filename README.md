@@ -7,7 +7,7 @@
 Different kubectl versions available, see the specific branches.
 
 Kubectl installed by [Google Cloud Platform SDK](https://cloud.google.com/sdk/)
+See [release notes](https://cloud.google.com/sdk/docs/release-notes) for more information.
 
 ## kubectl tags and versions
-* v1.8 -> 1.8.6
-* v1.7 -> 1.7.6
+* v1.6 -> 1.6.6

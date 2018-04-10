@@ -2,7 +2,7 @@ FROM jenkinsci/jnlp-slave
 
 MAINTAINER Christoph Raaflaub <raaflaub@puzzle.ch>
 
-ENV GCLOUND_VERSION=177.0.0
+ENV GCLOUND_VERSION=161.0.0
 ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
 ENV PATH /opt/google-cloud-sdk/bin:$PATH
 
