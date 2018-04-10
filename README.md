@@ -7,7 +7,4 @@
 Different kubectl versions available, see the specific branches.
 
 ## kubectl versions
-* v1.10.0
-* v1.9.0
-* v1.8.0
-* v1.7.0
+* v1.8
