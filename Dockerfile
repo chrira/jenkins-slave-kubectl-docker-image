@@ -2,7 +2,7 @@ FROM jenkins/jnlp-slave
 
 MAINTAINER Christoph Raaflaub <raaflaub@puzzle.ch>
 
-ENV KUBECTL_VERSION=v1.9.0
+ENV KUBECTL_VERSION=v1.10.0
 
 USER root
 
