@@ -1,8 +1,10 @@
-FROM jenkins/jnlp-slave
+FROM jenkinsci/jnlp-slave
 
 MAINTAINER Christoph Raaflaub <raaflaub@puzzle.ch>
 
-ENV KUBECTL_VERSION=v1.10.0
+ENV GCLOUND_VERSION=192.0.0
+ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
+ENV PATH /opt/google-cloud-sdk/bin:$PATH
 
 USER root
 
@@ -12,9 +14,6 @@ RUN apt-get update -y && \
       libapparmor-dev \
       libseccomp-dev
 
-# install kubectl
-RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
-    chmod +x ./kubectl && \
-    mv ./kubectl /usr/local/bin/kubectl
-
-USER jenkins
+RUN curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${GCLOUND_VERSION}-linux-x86_64.tar.gz | tar xvz && \
+    mv google-cloud-sdk /opt && \
+    gcloud components install kubectl
